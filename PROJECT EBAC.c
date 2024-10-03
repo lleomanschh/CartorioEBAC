@@ -134,6 +134,7 @@ int main()
 	printf("\t1 - Registar nomes\n");
 	printf("\t2 - Consultar nomes\n");
 	printf("\t3 - Deletar nomes\n\n"); 
+	printf("\t4 - Sair do sistema\n\n");
 	printf("Opção: ");// final do que vai aparecer
 	
 	scanf("%d", &opcao); // scanf vai pausara tela e dxar o user digitar a variavel e armazena
@@ -153,6 +154,11 @@ int main()
 		case 3:
 		deletar();
 		break;
+		
+		case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
+			break;
 		
 		default: // nao é nenhuma das opções e roda o comando padrão
 		printf("Não existe este comando por enquanto!");
